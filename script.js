@@ -45,3 +45,9 @@ function useSuggestion(e) {
 }
 
 input.addEventListener('keyup', searchHandler);
+
+//Suggestions and improvements
+//1. In the searchHandler function, there's a return statement at the end of the function, which doesn't seem to serve any purpose and can be removed
+//2. In the showSuggestions function, it's missing the useSuggestion click event handler, which should be attached outside of the forEach loop to avoid multiple event listeners on the same element
+//3. Consider further improvements especially when handling edge cases in the search function, such as handling empty input strings or non-matching results.
+//
