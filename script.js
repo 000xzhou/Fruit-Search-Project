@@ -8,7 +8,7 @@ function search(str) {
 	if(str) {
 		fruit.map(s=> 
 			{
-				if(s.toLowerCase().startsWith(str)) {
+				if(s.toLowerCase().includes(str.trim())) {
 					results.push(s)
 				}
 			})
